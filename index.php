@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aaaa</title>
+    <title>หน้าแรก</title>
 </head>
 <body>
     <?php
@@ -19,13 +19,13 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
+      <img src="https://forum.hareshi.net/attachments/149011651_1112703875809723_7581959633082627260_n-jpg.353/" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.animenewsnetwork.com/hotlink/thumbnails/crop1200x630gH5/cms/news.4/175428/khorosho.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
       <img src="https://cdn.donmai.us/original/15/f8/__alisa_mikhailovna_kujou_tokidoki_bosotto_roshia_go_de_dereru_tonari_no_arya_san_drawn_by_momoko_momopoco__15f8e290f75a3c7a65ab5ebc6aa51b6b.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://animeytraduccioness.files.wordpress.com/2021/07/421d14f5b46bba0cb1589f0403f44d4c.0.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://pbs.twimg.com/media/FPR3EwhagAAxQXa?format=jpg&name=large" class="d-block w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
