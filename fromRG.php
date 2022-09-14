@@ -1,3 +1,10 @@
+<?php 
+ob_start();
+session_start()
+if(!isset($_SESSION["status"])){
+  header("Location:login.php");
+}else{
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +30,7 @@
               <div class="col-md-2">
 
                 <label for="first_name" class="form-label">คำนำหน้า</label>
-                <select class="form-select" aria-label="Default select example" name="first_name" id="first_name">
+                <select class="form-select" aria-label="Default select example" name="first_name" id="first_name" required>
                   <option value="#">คำนำหน้า</option>
                   <option value="นาย">นาย</option>
                   <option value="นาง">นาง</option>
@@ -33,12 +40,12 @@
 
               <div class="col-md-5">
                 <label for="name" class="form-label">ชื่อ</label>
-                <input type="text" name="name" class="form-control" id="name" placeholder="ชื่อ">
+                <input type="text" name="name" class="form-control" id="name" placeholder="ชื่อ" required>
               </div>
 
               <div class="col-md-5">
                 <label for="last_name" class="form-label">นางสกุล</label>
-                <input type="text" name="last_name" class="form-control" id="last_name" placeholder="นางสกุล">
+                <input type="text" name="last_name" class="form-control" id="last_name" placeholder="นางสกุล" required>
               </div>
             </div>
           </div>
@@ -49,7 +56,7 @@
             <div class="row">
               <div class="col-md-2">
                 <div>
-                  <label for="sex" class="form-label">เพศ</label>
+                  <label for="sex" class="form-label" required>เพศ</label>
                 </div>
                 <input type="radio" class="form-check-input" name="sex" id="sex" value="ชาย">
                 <label class="form-check-label" for="sex">ชาย
@@ -62,12 +69,12 @@
               <div class="col-md-4">
                 <label for="date_birthdate" class="form-label">ว/ด/ป เกิด</label>
                 <input type="date" class="form-control" id="date_birthdate" name="date_birthdate" 
-                placeholder="00/00/0000" data-provide="datepicker" data-date-language="th-th">
+                placeholder="00/00/0000" data-provide="datepicker" data-date-language="th-th" required>
               </div>
 
               <div class="col-md-6">
                 <label for="address" class="form-label">ที่อยู่</label>
-                <textarea name="address" class="form-control" id="address" placeholder="ที่อยู่"></textarea>
+                <textarea name="address" class="form-control" id="address" placeholder="ที่อยู่" required></textarea>
               </div>
             </div>
           </div>
@@ -78,12 +85,20 @@
             <div class="row">
               <div class="col-md-6">
                 <label for="number" class="form-label">เบอร์โทร</label>
-                <input type="number" name="number" class="form-control" id="number" placeholder="เบอร์โทร">
+                <input type="number" name="number" class="form-control" id="number" placeholder="เบอร์โทร" required>
               </div>
 
               <div class="col-md-6">
                 <label for="gmail" class="form-label">อีเมล์</label>
-                <input type="gmail" name="gmail" class="form-control" id="gmail" placeholder="@gmail.com">
+                <input type="gmail" name="gmail" class="form-control" id="gmail" placeholder="@gmail.com" required>
+              </div>
+              <div class="col-md-6">
+                <label for="username" class="form-label">username</label>
+                <input type="username" name="username" class="form-control" id="username" placeholder="username" required>
+              </div>
+              <div class="col-md-6">
+                <label for="password" class="form-label">password</label>
+                <input type="password" name="password" class="form-control" id="password" placeholder="password" required>
               </div>
             </div>
           </div>
@@ -117,5 +132,7 @@
   include("footer.php")
   ?>
 </body>
-
+<?php 
+}
+?>
 </html>

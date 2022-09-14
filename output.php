@@ -21,9 +21,11 @@
     $address = $_POST['address'];
     $number = $_POST['number'];
     $email = $_POST['gmail'];
+    $username = $_POST['username'];
+    $passowrd = $_POST['password'];
 
-    $sql = "INSERT INTO tbl_65309010010(id,firstname,name,lastname,sex,birthday,address,number,gmail)
-    VALUES ('', '$f_name','$name','$last_name','$sex','$date','$address','$number','$email')";
+    $sql = "INSERT INTO tbl_65309010010(id,firstname,name,lastname,sex,birthday,address,number,gmail,username,password)
+    VALUES ('', '$f_name','$name','$last_name','$sex','$date','$address','$number','$email','$username','$password')";
 
     /*
     $sql = "INSERT INTO tbl_number (id, name) VALUES ('', '$name')";

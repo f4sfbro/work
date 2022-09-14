@@ -20,9 +20,9 @@
         $address = $_POST['address'];
         $number = $_POST['number'];
         $email = $_POST['gmail'];
-        
+        $password= $_POST['password'];
         //echo $texe_id;
-        $sql = "UPDATE tbl_65309010010 SET firstname='$f_name', name='$name',lastname='$last_name',sex='$sex',birthday='$date',address='$address',number='$number',gmail='$email' WHERE id='$id'";
+        $sql = "UPDATE tbl_65309010010 SET firstname='$f_name',name='$name',lastname='$last_name',sex='$sex',birthday='$date',address='$address',number='$number',gmail='$email',password='$password' WHERE id='$id'";
 
         if(mysqli_query($connetion, $sql)) {
             echo " <script>

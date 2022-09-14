@@ -115,6 +115,14 @@
                 <label for="gmail" class="form-label">อีเมล์</label>
                 <input type="gmail" name="gmail" class="form-control" id="gmail" placeholder="@gmail.com" value="<?php echo $objResult['gmail']; ?>">
               </div>
+              <div class="col-md-5">
+                <label for="name" class="form-label">username</label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="username" value="<?php echo $objResult['username']; ?>">
+              </div>
+              <div class="col-md-5">
+                <label for="password" class="form-label">password</label>
+                <input type="password" name="password" class="form-control" id="password" placeholder="password" value="<?php echo $objResult['password']; ?>">
+              </div>
             </div>
           </div>
           <!-------------row3------------->

@@ -38,8 +38,8 @@ session_start();
                     <th scope="col">Address</th>
                     <th scope="col">Phone</th>
                     <th scope="col">Gmail</th>
-                    <th scope="col"></th>
-                    <th scope="col"></th>
+                    <th scope="col">username</th>
+                    <th scope="col">password</th>
                 </tr>
             </thead>
             <tbody>
@@ -56,6 +56,8 @@ session_start();
                         <td><?php echo $objResult['address']; ?></td>
                         <td><?php echo $objResult['number']; ?></td>
                         <td><?php echo $objResult['gmail']; ?></td>
+                        <td><?php echo $objResult['username']; ?></td>
+                        <td><?php echo $objResult['password']; ?></td>
 
                         <?php
                         if (!isset($_POST["username"]) && $_SESSION['status'] == "admin") {
